@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Feedback</name>
+    </assembly>
+    <members>
+        <member name="M:Feedback.Controllers.UsersController.Post(Feedback.Core.Models.UserModel)">
+            <summary>
+            Creates a User.
+            </summary>
+            <remarks>
+            Note that the key is a GUID and not an integer.
+             
+                POST /Todo
+                {
+                   "name": "name1",
+                   "username": "username1",
+                   "password": "1",
+                   "mail": "abc@gmail.com",
+                   "Phone":"05555555555"
+                }
+            
+            </remarks>
+            <param name="userModel"></param>
+            <returns>New Created Todo Item</returns>
+            <response code="201">Returns the newly created item</response>
+            <response code="400">If the item is null</response>
+        </member>
+        <member name="M:Feedback.Controllers.UsersController.Delete(System.Int64)">
+            <summary>
+            Deletes a specific User.
+            </summary>
+            <param name="id"></param>
+        </member>
+    </members>
+</doc>
